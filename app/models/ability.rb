@@ -22,6 +22,8 @@ class Ability
       can :buscar, Empresa
       can :update, Empresa
 
+      can :create, Contact
+
     elsif user.tipo == "cliente"
       can :read, Departamento
       can :read, Ciudad
@@ -39,6 +41,8 @@ class Ability
       can :read, Persona
       can :create, Persona
       can :update, Persona
+
+      can :create, Contact
 
     else
 
@@ -61,7 +65,9 @@ class Ability
       can :create, Persona
 
       can :create, Categorium
-      can :read, :all
+
+      can :create, Contact
+      #can :read, :all
     end
 
     #

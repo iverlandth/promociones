@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
+  load_and_authorize_resource
   def index
     @contacts = Contact.all
 
@@ -44,7 +45,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Contact was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Mensaje enviado nos contactaremos lo mas antes posible.' }
         format.json { render json: @contact, status: :created, location: @contact }
       else
         format.html { render action: "new" }

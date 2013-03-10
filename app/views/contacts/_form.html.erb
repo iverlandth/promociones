@@ -1,7 +1,8 @@
+(*) Campos requeridos
 <%= form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <h2><%= pluralize(@contact.errors.count, "error") %> al momento de enviar su mensaje:</h2>
 
       <ul>
       <% @contact.errors.full_messages.each do |msg| %>
@@ -11,29 +12,29 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field">*
     <%= f.label :nombre %>
-    <%= f.text_field :nombre %>
+    <%= f.text_field :nombre, :required=>"true", :placeholder=>"Nombre", :autofocus=>"true", :title=>"Nombre" %>
   </div>
   <div class="field">
     <%= f.label :apellido %>
-    <%= f.text_field :apellido %>
+    <%= f.text_field :apellido, :placeholder=>"Apellidos" , :title=>"Apellidos" %>
   </div>
-  <div class="field">
+  <div class="field"> *
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, :required=>"true", :placeholder=>"Email"  , :title=>"Email", :type=>"email" %>
   </div>
   <div class="field">
     <%= f.label :telefono %>
-    <%= f.number_field :telefono %>
+    <%= f.number_field :telefono, :placeholder=>"Teléfono"  , :title=>"Teléfono", :min=>"10000" %>
   </div>
-  <div class="field">
+  <div class="field">*
     <%= f.label :asunto %>
-    <%= f.text_field :asunto %>
+    <%= f.text_field :asunto, :required=>"true", :placeholder=>"Asunto"  , :title=>"Asunto" %>
   </div>
-  <div class="field">
+  <div class="field">*
     <%= f.label :mensaje %>
-    <%= f.text_area :mensaje %>
+    <%= f.text_area :mensaje, :required=>"true", :placeholder=>"Mensaje"  , :title=>"Mensaje", :rows=>"3" %>
   </div>
   <div class="actions">
     <%= f.submit %>

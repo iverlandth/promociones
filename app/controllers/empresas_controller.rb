@@ -95,7 +95,7 @@ class EmpresasController < ApplicationController
   # POST /empresas.json
   def create
     @empresa = Empresa.new(params[:empresa])
-    
+
     respond_to do |format|
       if @empresa.save
         format.html { redirect_to @empresa, notice: 'Empresa creada.' }

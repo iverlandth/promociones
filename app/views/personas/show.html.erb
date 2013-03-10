@@ -1,3 +1,5 @@
+<div class="datosper">
+<p id="notice"><%= notice %></p>
 
 <p>
   <b>Ci:</b>
@@ -28,7 +30,8 @@
   <b>Id usuario:</b>
   <%= @persona.id_usuario %>
 </p>
-
-
-<%= link_to 'Editar', edit_persona_path(@persona) %> |
-<%= link_to 'Atrás', personas_path %>
+</div>
+<div class="botontabla">
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>
+</div>

@@ -21,6 +21,9 @@
             <li>
               <%= link_to "Datos", :controller => "personas", :action => "index" %>
             </li>
+            <li>
+              <%= link_to "Contacto", :controller => "contacts", :action => "new" %>
+            </li>
 
         <% elsif current_user.tipo == "empresa" %>
             <li>
@@ -29,6 +32,9 @@
             <li>
               <%= link_to "Crear Cupones", :controller => "cupons", :action => "index" %>
             </li>
+            <li>
+              <%= link_to "Contacto", :controller => "contacts", :action => "new" %>
+            </li>
         <% elsif current_user.tipo == "Admin" %>
             <li>
               <%= link_to "Empresas", :controller => "empresas", :action => "index" %>
@@ -36,16 +42,20 @@
             <li>
               <%= link_to "Configuración", :controller => "configuraciones", :action => "index" %>
             </li>
+            <li>
+              <%= link_to "Contacto", :controller => "contacts", :action => "index" %>
+            </li>
         <% end %>
         <% else %>
             <li>
               <%= link_to "Publicite", :controller => "empresas", :action => "presentacion" %>
             </li>
+        <li>
+          <%= link_to "Contacto", :controller => "contacts", :action => "new" %>
+        </li>
 
     <% end %>
-    <li>
-      <%= link_to "Contacto", :controller => "contacts", :action => "new" %>
-    </li>
+
 
   </ul>
 </nav>
