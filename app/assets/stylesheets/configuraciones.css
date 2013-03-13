@@ -1,0 +1,9 @@
+#config p{
+    display: inline-block;
+    box-shadow: 2px 10px 25px #4d4d4d;
+}
+#config a{
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 18px;
+}
