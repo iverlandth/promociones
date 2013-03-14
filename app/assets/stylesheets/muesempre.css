@@ -17,13 +17,37 @@ td{
     padding: 3px;
 }
 .botontabla a{
-    color:#f1f1f1;
-    background: #4d4d4d;
-    border: 1px solid #4d4d4d;
-    border-radius:20% ;
+    background: #838a90;
+    background: -webkit-gradient(linear, left top, left bottom, from(#838a90), to(#414549));
+    background: -moz-linear-gradient(-90deg, #838a90, #414549);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#838a90, endColorstr=#414549);
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#838a90, endColorstr=#414549);
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 20%;
+    text-shadow: black 0 1px 0;
+    -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    -ms-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    -o-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.2) inset;
+    border: solid 1px #484e53;
+    border-color: #484e53;
+    border-top-color: #616a71;
+    border-right-color: #484e53;
+    border-bottom-color: #363b3f;
+    border-left-color: #484e53;
+    color: #efefef;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.0em;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 12px;
+    margin-right: 3px;
+    padding: 7px 16px 6px;
     text-decoration: none;
-    padding: 5px;
-    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
 }
 .infoempre{
     box-shadow: 2px 10px 25px #4d4d4d;

@@ -1,4 +1,11 @@
 .bus{
+    background: #efc5ca; /* Old browsers */
+    background: -moz-linear-gradient(top, #efc5ca 0%, #ba2737 92%, #f18e99 100%) ; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efc5ca), color-stop(92%,#ba2737), color-stop(100%,#f18e99)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efc5ca 0%,#ba2737 92%,#f18e99 100%); /* Chrome10+,Safari5.1+ */
+    background: -ms-linear-gradient(top, #efc5ca 0%,#ba2737 92%,#f18e99 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #efc5ca 0%,#ba2737 92%,#f18e99 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=0 ); /* IE6-9 */
     width: 35%;
     float: right;
     box-shadow: 2px 10px 25px #4d4d4d;

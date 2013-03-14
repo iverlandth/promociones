@@ -3,6 +3,7 @@
 <hr  width=100% align="center" color="b3dced"  />
 Para que podamos cambiar tu contraseña, identifica tu cuenta a través de una de las opciones siguientes.
 <hr />
+  <div class="global">
 <%= form_tag password_resets_path, :method => :post do %>
   <div class="field">
   	<%= image_tag "mail.gif"%>
@@ -11,4 +12,5 @@ Para que podamos cambiar tu contraseña, identifica tu cuenta a través de una d
   </div>
   <div class="actions"><%= submit_tag "Enviar" %></div>
 <% end %>
+    </div>
 </div>
